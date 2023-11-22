@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var lista = prompt ('Você deseja adicionar umacomida na sua lista de compras?')
+    if (lista == "não") {
+        var error = prompt ('Sua lista de compras esta vazia');
+    } else if (lista == "sim"){
+        var comida = prompt ('Digite a comida que você quer:');
+        var categoria = prompt ('Qual categoria de comida que você escolheu: frutas, laticinios, congelados ou doces');
+    }
+
+    if (categoria == frutas) {
+        var frutas = comida;
+        alert (frutas)
+    } else if (categoria == laticinios) {
+        var laticinios = comida;
+        alert (laticinio)
+    } else if (categoria == doces) {
+        var doces = comida;
+        alert (doces)
+    }
+
+    if (categoria === 'frutas') {
+        frutas.push (comida);
+    } else if (categoria === 'laticinios') {
+        laticinios.push (comida);
+    } else if (categoria === 'doce') {
+        doce.push (comida);
+    } else if (categoria === congelados) {
+        congelados.push (comida);
+    } else {
+        alert ("Essa categoria não foi pré-definida.")
+    }
+    alert ('Lista de compras:\n frutas: ${frutas}\n laticinios:${laticinios}\n doces: ${doces\n} congelados: ${congelados}');
+    var remover = prompt ('que intens você deseja remover')
+    var remover = [];
+    console.log (comida)
+
+    var pos = 1;
+    n = 2;
+
+    var itensremovidos = comida.splice (pos, n);
+    console.log (comida);
+    console.log (itensremovidos);
+</script>
+<body>
+</body>
+</html>

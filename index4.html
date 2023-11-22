@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let numeroaleatorio = math.floor (math.random()*11);
+    let errounumero = 0;
+
+    console.log (numeroaleatorio)
+    for (let i = 0; i < 3; i+=1) {
+        adivinharvalor = prompt ("tente adivinhar o número de 0 a 10:");
+        //console.log(i);
+        if (numeroaleatorio == advinhavalor) {
+        alert ('Parabéns!Voc~e acertou.');
+        break;
+    }
+    if (numeroaleatorio !== adivinhavalor) {
+        errounumero += 1;
+        //console.log (errounumero)
+        alert("tente novamente")
+    }
+    if (errounumero ==3) {
+         elert ('Que pena você errou. O número era ${numeroaleatorio}')
+   }
+}
+</script>
+<body>
+</body>
+</html>

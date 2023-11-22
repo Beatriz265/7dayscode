@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="id_n1"> Primeiro número:</label>
+    <input type=" text" id="id_n1">
+    <br>
+    <label for="id_n2"> Segundo número: </label>
+    <input type="text" id="id_n2">
+    <br>
+    <button onclick="calcular()"> calcular</button>
+    <br>
+    <p>Resultado; <span id="id_resultado" ></span> </p>
+
+    <script>
+        function calcular() {
+            var n1 = parseint (document.getElementByid('id_n1').value);
+            var n2 = parseint (document.getElemantByid('id_n2').value);
+            var soma = n1 + n2;
+            document.getElementByid('id_resultado').innerHTML = soma;
+
+            var subtracao = n1 - n2;
+            document.getElementByid('id_resultado').innerHTML = subtracao;
+
+            var divisao = n1 * n2;
+            document.getElementByid('id_resultado').innerHTML = multiplicacao;
+
+            var divisao = n1 ** n2;
+            document.getElementByid('id_resultado').innerHTML = divisao;
+        }
+    </script>
+</body>
+</html>
